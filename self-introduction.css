@@ -1,0 +1,50 @@
+
+
+/*
+  CSS(カスケーディング・スタイル・シート)
+  { }にセミコロンは必要ないので注意!!
+
+  body,liなどはCSSだと「セレクタ」といい、HTMLのタグの見た目を編集する役割を持つ
+*/
+
+
+
+/*背景色*/
+body {
+  background-color: rgb(255, 242, 227);
+}
+
+li {
+  list-style: square; /*リストの・を ■ に変更*/
+  margin: 10px; /*余白*/
+}
+a {
+  font-weight: bold; /*URLを太字にする*/
+}
+
+
+/*
+レベルコンテンツについて
+・ブロック<p>：　自動で改行されるタグ
+・インライン<span>：　改行されないタグ<br>などが必要
+*/
+p {
+  color: white;
+  background-color: cornflowerblue;
+}
+span {
+  color: black;
+  background-color: white;
+
+  /*display: block; でレベルコンテンツを変換可能*/
+}
+
+
+/*
+ユーザーエージェントスタイルシートとは
+
+タグを設定した時、デザインが自動で最適化される仕組み
+「ブロックか」「インラインか」を分けられた場所でもある (組み込み関数とも似ている)
+*/
+
+
